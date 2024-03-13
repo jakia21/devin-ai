@@ -669,3 +669,9 @@ header .outer__header ul > li > a:hover {
     margin-bottom: 0px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .in_ttl {
+    padding-top: 100px;
+  }
+}
