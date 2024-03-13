@@ -787,6 +787,10 @@ img.circle_img {
   background: #111;
 }
 @media screen and (max-width: 768px) {
+  .introduction {
+    padding: 70px 0px;
+    padding-top: 130px;
+  }
   .in_ttl {
     padding-top: 100px;
   }
