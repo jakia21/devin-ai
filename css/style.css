@@ -1,0 +1,671 @@
+body,
+html {
+  margin: 0px;
+  padding: 0px;
+  background: url("../img/back.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #000f19;
+  overflow-x: hidden;
+}
+
+body * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Avenir", sans-serif;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("../fonts/AvenirLTProBook.otf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url("../fonts/AvenirLTProBlack.otf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url("../fonts/AvenirLTProLight.otf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url("../fonts/AvenirLTProMedium.otf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+.container {
+  max-width: 1230px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+header {
+  width: 100%;
+  position: absolute;
+  top: 40px;
+  z-index: 3;
+}
+header .outer__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+header .outer__header ul {
+  padding: 0px;
+  list-style-type: none;
+  margin: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+header .outer__header ul > li {
+  margin-right: 40px;
+}
+header .outer__header ul > li:last-child {
+  margin-right: 0px;
+}
+header .outer__header ul > li > a {
+  -webkit-transition: 0.4s ease all;
+  transition: 0.4s ease all;
+  color: #97a4be;
+  font-size: 18px;
+  text-decoration: none;
+}
+header .outer__header ul > li > a:hover {
+  opacity: 0.7;
+}
+
+.hero__section {
+  /* background: url("../img/heroback.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom; */
+  background-color: #111;
+  position: relative;
+}
+.hero__section:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  height: 140px;
+  background: #000f19;
+  -webkit-filter: blur(40px);
+  filter: blur(40px);
+  bottom: -75px;
+  width: calc(100% + 80px);
+}
+.hero__section .outer__hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 920px;
+}
+.hero__section .outer__hero .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.hero__section .outer__hero .buttons > a {
+  margin-right: 25px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #1f1b30;
+  -webkit-transition: 0.4s ease all;
+  transition: 0.4s ease all;
+  min-height: 48px;
+  min-width: 220px;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 11px;
+  background: linear-gradient(88deg, #04ffa4 0%, #2a9b7f 100%);
+}
+.hero__section .outer__hero .buttons > a:hover {
+  opacity: 0.7;
+}
+.hero__section .outer__hero .buttons > a:last-child {
+  margin-right: 0px;
+}
+.hero__section .outer__hero .logo {
+  margin-bottom: 35px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+.hero__section .outer__hero .logo > img {
+  max-width: 740px;
+}
+
+.introduction {
+  padding: 40px 0px;
+  padding-top: 220px;
+}
+.introduction .outer__introduction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.introduction .outer__introduction .desc__ {
+  max-width: 540px;
+  position: relative;
+  z-index: 2;
+}
+.introduction .outer__introduction .desc__ > h2 {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: 900;
+  color: #ffffff;
+}
+.introduction .outer__introduction .desc__ > p {
+  margin: 0px;
+  font-size: 18px;
+  color: #97a4be;
+  font-weight: 500;
+  line-height: 25px;
+}
+.introduction .outer__introduction .media__ {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  max-width: 640px;
+  width: 100%;
+  position: relative;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.introduction .outer__introduction .media__ img {
+  max-width: 840px;
+  position: absolute;
+}
+
+.tokenomics {
+  padding-top: 150px;
+  padding-bottom: 90px;
+  position: relative;
+  z-index: 2;
+}
+.tokenomics .outer__tokenomics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+}
+.tokenomics .outer__tokenomics img {
+  position: absolute;
+  max-width: 240px;
+  top: -70px;
+  right: -70px;
+}
+.tokenomics .outer__tokenomics .table {
+  width: 100%;
+  max-width: 600px;
+}
+.tokenomics .outer__tokenomics .table .el__ {
+  margin-bottom: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  padding: 10px 30px;
+  border: 1px solid #373d51;
+  background: rgba(4, 7, 16, 0.36);
+  -webkit-backdrop-filter: blur(21.5px);
+  backdrop-filter: blur(21.5px);
+}
+.tokenomics .outer__tokenomics .table .el__ > p {
+  margin: 0px;
+  font-size: 34px;
+  font-weight: bold;
+  color: #04ffa4;
+}
+.tokenomics .outer__tokenomics .table .el__ > span {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-right: 15px;
+  font-size: 18px;
+  min-width: 100px;
+  font-weight: 400;
+  color: #fff;
+}
+.tokenomics .outer__tokenomics .table .el__:last-child {
+  margin-bottom: 0px;
+}
+.tokenomics .outer__tokenomics .desc__ {
+  margin-right: 50px;
+  max-width: 500px;
+}
+.tokenomics .outer__tokenomics .desc__ > p {
+  margin: 0px;
+  font-size: 18px;
+  color: #97a4be;
+  font-weight: 500;
+  line-height: 25px;
+}
+.tokenomics .outer__tokenomics .desc__ > h2 {
+  margin-top: 0px;
+  margin-bottom: 15px;
+  font-size: 40px;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.partners {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.partners .tickercontainer {
+  height: auto !important;
+}
+.partners .elem__partner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0.4;
+  padding: 0px 25px !important;
+}
+.partners .partners__grid {
+  padding: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0px;
+}
+.partners > .container > h2 {
+  margin-top: 0px;
+  margin-bottom: 25px;
+  font-size: 40px;
+  font-weight: 900;
+  color: #ffffff;
+  text-align: center;
+}
+
+.join__community {
+  padding: 100px 0px;
+}
+.join__community .outer__join {
+  max-width: 740px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #373d51;
+  background: rgba(4, 7, 16, 0.36);
+  -webkit-backdrop-filter: blur(21.5px);
+  backdrop-filter: blur(21.5px);
+  border-radius: 10px;
+  padding: 40px 15px;
+}
+.join__community .outer__join > p {
+  margin-top: 0px;
+  margin-right: 25px;
+  margin-bottom: 0px;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  margin-top: 20px;
+  font-weight: 500;
+}
+.join__community .outer__join > p a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+}
+.join__community .outer__join ul {
+  padding: 0px;
+  list-style-type: none;
+  margin: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.join__community .outer__join ul > li {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-right: 25px;
+}
+.join__community .outer__join ul > li a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+.join__community .outer__join ul > li a img {
+  max-height: 70px;
+  max-width: 70px;
+}
+.join__community .outer__join ul > li:last-child {
+  margin-right: 0px;
+}
+.join__community .outer__join > h2 {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+}
+
+@media (min-width: 2000px) {
+  .hero__section:before {
+    height: 180px;
+  }
+}
+@media (max-width: 1200px) {
+  .hero__section .outer__hero .logo > img {
+    max-width: 540px;
+  }
+
+  .hero__section .outer__hero {
+    min-height: 700px;
+  }
+
+  .tokenomics .outer__tokenomics .desc__ {
+    max-width: 420px;
+  }
+}
+.join__community .outer__join > p {
+  margin-right: 0px;
+}
+
+@media (max-width: 991px) {
+  .tokenomics .outer__tokenomics img {
+    top: auto;
+    bottom: 60px;
+  }
+
+  .tokenomics .outer__tokenomics {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .tokenomics .outer__tokenomics .desc__ {
+    max-width: 600px;
+    width: 100%;
+    margin-bottom: 35px;
+    margin-right: 0px;
+  }
+
+  .tokenomics .outer__tokenomics .desc__ > h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+  }
+
+  .tokenomics .outer__tokenomics .desc__ > p {
+    font-size: 16px;
+    line-height: 23px;
+  }
+
+  .tokenomics .outer__tokenomics .table .el__ > p {
+    font-size: 28px;
+  }
+
+  .introduction .outer__introduction .desc__ {
+    max-width: 440px;
+  }
+
+  .introduction .outer__introduction .media__ {
+    min-width: 400px;
+  }
+
+  .introduction .outer__introduction .media__ img {
+    max-width: 640px;
+  }
+
+  .introduction {
+    padding-top: 100px;
+  }
+
+  .introduction .outer__introduction .desc__ > h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+  }
+
+  .introduction .outer__introduction .desc__ > p {
+    font-size: 16px;
+    line-height: 23px;
+  }
+
+  header {
+    top: 20px;
+  }
+
+  header .outer__header ul > li > a {
+    font-size: 16px;
+  }
+
+  header .outer__header ul > li {
+    margin-right: 25px;
+  }
+
+  .hero__section .outer__hero .logo > img {
+    max-width: 440px;
+  }
+
+  .hero__section .outer__hero .buttons > a {
+    min-width: 180px;
+    font-size: 16px;
+  }
+
+  .partners > .container > h2 {
+    font-size: 32px;
+  }
+
+  .partners {
+    padding: 40px 0px;
+  }
+
+  .join__community .outer__join > h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .join__community {
+    padding: 60px 0px;
+  }
+
+  .join__community .outer__join > p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .join__community {
+    padding-top: 20px;
+  }
+
+  .join__community .outer__join > h2 {
+    font-size: 26px;
+  }
+
+  .partners > .container > h2 {
+    font-size: 26px;
+  }
+
+  .partners .elem__partner {
+    padding: 0px 15px !important;
+  }
+
+  .tokenomics {
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+
+  .tokenomics .outer__tokenomics .desc__ > h2 {
+    font-size: 26px;
+  }
+
+  .introduction .outer__introduction {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .introduction .outer__introduction .media__ img {
+    position: static;
+  }
+
+  .introduction .outer__introduction .media__ {
+    margin-top: -120px;
+    margin-bottom: -120px;
+  }
+
+  .hero__section .outer__hero {
+    min-height: 540px;
+  }
+
+  .hero__section .outer__hero .logo > img {
+    max-width: 350px;
+  }
+
+  .hero__section .outer__hero .buttons > a {
+    min-height: 40px;
+    min-width: 160px;
+  }
+
+  .introduction .outer__introduction .desc__ > h2 {
+    font-size: 26px;
+  }
+
+  .introduction .outer__introduction .media__ {
+    min-width: 0px;
+  }
+}
+@media (max-width: 480px) {
+  .tokenomics .outer__tokenomics .table .el__ > p {
+    font-size: 24px;
+  }
+
+  .tokenomics .outer__tokenomics .table .el__ > span {
+    font-size: 16px;
+    min-width: 80px;
+  }
+
+  .tokenomics .outer__tokenomics .table .el__ {
+    margin-bottom: 25px;
+    padding: 10px 15px;
+  }
+
+  .introduction .outer__introduction .media__ {
+    margin-top: -100px;
+    margin-bottom: -50px;
+  }
+  .introduction .outer__introduction .media__ img {
+    min-width: 440px;
+    max-width: 440px;
+  }
+
+  header .outer__header ul > li > a {
+    font-size: 14px;
+  }
+
+  .hero__section .outer__hero .logo > img {
+    max-width: 290px;
+    width: 100%;
+  }
+
+  .hero__section .outer__hero {
+    min-height: 440px;
+  }
+
+  .hero__section .outer__hero .buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .hero__section .outer__hero .buttons > a {
+    margin-right: 0px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .hero__section .outer__hero .buttons > a:last-child {
+    margin-bottom: 0px;
+  }
+}
